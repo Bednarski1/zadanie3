@@ -7,9 +7,9 @@
 </head>
 <body>
     <form method="post">
-        <input type="text" placeholder="Login" name="login">
-        <input type="password" placeholder="Hasło" name="password">
-        <input type="submit" value="Zaloguj się" name="submit">
+        <input type="text" placeholder="login" name="login">
+        <input type="password" placeholder="hasło" name="password">
+        <input type="submit" value="zaloguj" name="submit">
     </form>
 </body>
 <?php
@@ -28,7 +28,7 @@ else
     {
         $records = $query->num_rows;
         if($records == 0)
-        echo "Nie ma takiego użytkownika lub hasła!";
+        echo "Nieprawidłowy login lub hasło";
         else 
         echo "Zalogowano!";
     }
