@@ -13,7 +13,7 @@
     </form>
 </body>
 <?php
-$connection = new mysqli("localhost","root","","formularz");
+$connection = new mysqli("localhost","root","","baza");
 
 if($connection->connect_errno!=0)
     echo "Błąd: ".$polaczenie->errno;
